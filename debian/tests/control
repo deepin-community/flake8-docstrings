@@ -1,0 +1,6 @@
+Test-Command: set -e
+ ; cd "$AUTOPKGTEST_TMP"
+ ; flake8 --version | grep -q docstrings
+Depends: flake8,
+         python3-flake8-docstrings
+Restrictions: superficial
